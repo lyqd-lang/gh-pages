@@ -1,72 +1,28 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <style>
-        * {
-            font-family: Helvetica Neue, Helvetica, Arial, sans-serif
-        }
-
-        a {
-            color: #eee;
-        }
-
-        /* Style the header */
-        .header {
-            padding: 10px 16px;
-            background: rgb(4, 156, 202);
-            color: #eee;
-        }
-
-        /* Page content */
-        .content {
-            padding: 16px;
-        }
-
-        /* The sticky class is added to the header with JS when it reaches its scroll position */
-        .sticky {
-            position: fixed;
-            top: 0;
-            width: 100%
-        }
-
-        /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
-        .sticky+.content {
-            padding-top: 102px;
-        }
-    </style>
-
-    <script>
-        // When the user scrolls the page, execute myFunction
-        window.onscroll = function () { myFunction() };
-
-        // Get the header
-        var header = document.getElementById("myHeader");
-
-        // Get the offset position of the navbar
-        var sticky = header.offsetTop;
-
-        // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-        function myFunction() {
-            if (window.pageYOffset > sticky) {
-                header.classList.add("sticky");
-            } else {
-                header.classList.remove("sticky");
-            }
-        }
-    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home - lqyd</title>
+    <!-- vvv TODO better colors vvv -->
+    <link rel="stylesheet" href="/index.css">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="/index.js"></script>
 </head>
 
-<body>
+<body id="particles">
 
-    <div class="header" id="myHeader">
-        <center>
-            <img src="https://lyqd-lang.github.io/images/Untitled.png", width=756, height=256></img>
-        </center><br>
-        <span class="right"><a href="/docs">documentation</a></span>
-        <span class="right"><a href="/install">install</a></span>
-        <span class="right"><a href="/blog">blog</a></span>
+    <div id="main">
+        <h2 id="title">Lyqd</h3>
+        <p>
+            A reliable language (hopefully) <br>
+        </p>
+        <div id="bottom">
+            <a href="https://github.com/lyqd-language" class="no-underline"> <img id="github" src="/assets/GitHub-Mark-Light-32px.png"> </a>
+        </div>
     </div>
+
 </body>
 
 </html>
